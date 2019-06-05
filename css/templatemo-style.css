@@ -18,14 +18,11 @@ text-gray: #6b6b6b;
 */
 
 @font-face {
-  font-family: ginga;
-  src: url(../webfonts/Ginga.ttf);
+  font-family: quango;
+  src: url(../webfonts/Quango.otf);
 }
 
-@font-face {
-  font-family: billy;
-  src: url(../webfonts/Billy.ttf);
-}
+
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -33,7 +30,7 @@ html {
 }
 
 body {
-  font-family: billy;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #6b6b6b;
@@ -100,8 +97,8 @@ a:hover {
 }
 
 .tm-brand-name {
-  font-size: 3.8rem;
-  font-family: billy;
+  font-size: 4.2rem;
+  font-family: quango;
 }
 
 .tm-brand-description {
