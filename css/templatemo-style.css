@@ -54,7 +54,7 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.tm-bg-blackstlyed-transparent{
+.tm-bg-blackstlyed-transparent {
   background-image: url("../img/black_bg1.jpg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -273,8 +273,7 @@ p {
 #tmContactForm {
   width: 100%;
   max-width: 680px;
-  padding: 5rem 10rem 0rem;
-  margin-bottom: 95px;
+  margin: 2rem 0rem;
 }
 
 .form-group {
@@ -306,6 +305,19 @@ p {
 
 .tm-link {
   color: #676767;
+}
+
+.medialinks{
+  display: flex;
+  justify-content: center;
+}
+
+.medialinks i {
+  padding: 0rem 1rem;
+  font-size: 3rem;
+  opacity: 0.5;
+  color: #ccc;
+  text-decoration: none;
 }
 
 @media (max-width: 1054px) {
