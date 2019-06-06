@@ -137,6 +137,7 @@ a:hover {
   width: 100%;
   display: flex;
   align-items: stretch;
+
 }
 
 .tm-welcome-title {
@@ -402,7 +403,9 @@ p {
 }
 
 @media (max-width: 572px) {
-
+  .tm-brand-description {
+    font-size: 1rem;
+  }
 
   .tm-brand-container {
     padding: 45px;
@@ -415,7 +418,8 @@ p {
   }
 
   .tm-brand-container {
-    padding: 0px 75px 75px 50px;
+    padding: 0px 85px 0px 0px;
+    margin-bottom: 12rem;
   }
 
   .iframe {
