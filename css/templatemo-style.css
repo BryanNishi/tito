@@ -163,8 +163,9 @@ a:hover {
 */
 
 #tmPortfolio {
-  padding-top: 80px;
+  padding-top: 0;
   background-color: #222;
+  border-bottom: 2rem double white;
 }
 
 .tm-portfolio-item {
