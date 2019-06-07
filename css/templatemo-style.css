@@ -189,19 +189,21 @@ a:hover {
 }
 
 
-#spacer{
+#spacer {
   height: 10rem;
- }
+}
+
 /*
   Portfolio section
 */
 
 #tmPortfolio {
-  margin-top: 0;
-  padding-top: 0;
-  background-color: #222;
+  height: 35rem;
+  background-image: url("../img/panamacity.jpg");
+  background-size: cover;
+  background-attachment: fixed;
   border-top: 2rem double white;
-  border-bottom: 1rem solid #444;
+  border-bottom: 2rem double white;
 }
 
 .tm-text-green {
@@ -391,7 +393,11 @@ p {
     font-size: 3rem;
   }
 
-
+  #tmPortfolio {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20rem;
+  }
 
   .iframe {
     width: 300px;
