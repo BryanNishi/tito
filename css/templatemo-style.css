@@ -200,7 +200,8 @@ a:hover {
   margin-top: 0;
   padding-top: 0;
   background-color: #222;
-  border-bottom: 2rem double white;
+  border-top: 2rem double white;
+  border-bottom: 1rem solid #444;
 }
 
 .tm-text-green {
