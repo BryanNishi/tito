@@ -22,6 +22,11 @@ text-gray: #6b6b6b;
   src: url(../webfonts/Quango.otf);
 }
 
+@font-face {
+  font-family: stamp;
+  src: url(../webfonts/Rubberstamp.otf);
+}
+
 
 
 html {
@@ -30,7 +35,7 @@ html {
 }
 
 body {
-  font-family: serif;
+  font-family: stamp;
   font-size: 18px;
   font-weight: 400;
   color: #6b6b6b;
