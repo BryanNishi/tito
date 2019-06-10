@@ -201,7 +201,8 @@ a:hover {
   height: 35rem;
   background-image: url("../img/panamacity.jpg");
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: relative;
+  background-position-y: 35%;
   border-top: 2rem double white;
   border-bottom: 2rem double white;
 }
@@ -396,6 +397,7 @@ p {
   #tmPortfolio {
     background-size: contain;
     background-repeat: no-repeat;
+    background-position-y: 95%;
     height: 20rem;
   }
 
