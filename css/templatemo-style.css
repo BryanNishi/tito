@@ -27,8 +27,6 @@ text-gray: #6b6b6b;
   src: url(../webfonts/Rubberstamp.otf);
 }
 
-
-
 html {
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
@@ -41,14 +39,6 @@ body {
   color: #6b6b6b;
   overflow-x: hidden;
 }
-
-.watermark {
-  position: fixed;
-  opacity: 0.4;
-  z-index: 999;
-  color: white;
-}
-
 
 a,
 button {
@@ -99,6 +89,9 @@ a:hover {
   background-color: #676767;
 }
 
+.navbar button {
+  float: right;
+}
 /*
   Welcome section
 */
@@ -150,7 +143,6 @@ a:hover {
   width: 100%;
   display: flex;
   align-items: stretch;
-
 }
 
 .tm-welcome-title {
@@ -196,16 +188,15 @@ a:hover {
   height: 315px;
 }
 
-
 #spacer {
   height: 10rem;
 }
 
 /*
-  Portfolio section
+  Bio section
 */
 
-#tmPortfolio {
+#tmBio {
   height: 35rem;
   background-image: url("../img/panamacity.jpg");
   background-size: cover;
@@ -330,7 +321,6 @@ p {
   .tm-contact-item-icon {
     margin-bottom: 15px;
   }
-
 }
 
 @media (max-width: 991px) {

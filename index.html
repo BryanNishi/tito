@@ -20,7 +20,35 @@
 
 <body>
   <div>
-    <img  class="watermark" src="./img/BNLogo.png">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+          aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <a class="navbar-brand">Tito Zambrano</a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#tmWelcome">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tmBio">Bio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tmContact">Art</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#feed">Instagram Feed</a>
+            </li>
+          </ul>
+          <a href="https://www.picktime.com/87562fc2-c980-465e-8aea-2bd19c6a6734"
+            class="ptbkbtn form-inline my-2 my-lg-0" target="_blank"><img
+              src="https://www.picktime.com/bookingPage/img/picktime-book-online.png"
+              alt="Book an appointment with BN web development services" /></a>
+        </div>
+      </div>
+    </nav>
     <!-- Hero Image -->
     <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/tito2.jpg">
       <div class="container-fluid tm-brand-container-outer">
@@ -52,9 +80,8 @@
             <div class="col-md-5">
               <div class="tm-welcome-right">
                 <a><img src="./img/inkmasters12.jpg">
-                  <p>Airing Tue June 11th 10/9 C on the Paramount Network</p>
+                  <p class="center">Airing on the Paramount Network</p>
                 </a>
-
               </div>
             </div>
           </div>
@@ -62,7 +89,8 @@
       </div>
     </section>
 
-    <section id="tmPortfolio">
+    <!-- bio section -->
+    <section id="tmBio">
       <div class="medialinks tm-bg-black-transparent">
         <a href="https://www.instagram.com/titozambrano/" target="_blank">
           <i class="fab fa-instagram"></i>
@@ -76,13 +104,20 @@
         </a>
       </div>
     </section>
+    <div class="container">
+      <h3>Bio info goes here.</h3>
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum."</p>
+    </div>
 
     <!-- portfolio section -->
     <div id="tmContact" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-02.jpg">
       <div class="container-fluid">
         <h1>My Art</h1>
         <div class="row">
-
           <div class="col-12">
             <div class="card-columns">
               <div class="card">
@@ -142,54 +177,57 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- Contact -->
-      <div class="container-fluid contact">
-        <div class="row">
-          <div class="col-8">
-            <h2>Sign up for the Newsletter</h2>
-            <form method="POST" action="https://formspree.io/bryan.nishi@gmail.com" id="tmContactForm">
-              <input type="name" name="name" placeholder="Your Name">
-              <input type="email" name="email" placeholder="Your Email">
-              <button type="submit">Sign Up</button>
-            </form>
-          </div>
-          <div class="col-4">
-            <h2>Follow & Stay Connected</h2>
-            <div class="sharethis-inline-share-buttons"></div>
-            <div class="medialinks">
 
-              <a href="https://www.instagram.com/titozambrano/" target="_blank">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="https://www.facebook.com/titozambranoart/" target="_blank">
-                <i class="fab fa-facebook"></i>
-                <iframe
-                  src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Ftitozambranoart&layout=button&size=large&appId=2376271312612152&width=73&height=28"
-                  width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                  allowTransparency="true" allow="encrypted-media"></iframe>
-              </a>
+        <div class="elfsight-app-bd27463a-8b46-43cc-8905-67460562449d"></div>
+      </div>
+
+      <!-- Contact -->
+      <section id=feed>
+        <div class="container-fluid contact">
+          <div class="row">
+            <div class="col-6">
+              <a href="https://www.picktime.com/87562fc2-c980-465e-8aea-2bd19c6a6734" class="ptbkbtn" target="_blank"
+                style="float:none;"><img src="https://www.picktime.com/bookingPage/img/picktime-book-online.png"
+                  alt="Book an appointment with BN web development services" /></a>
+            </div>
+            <div class="col-6 text-center">
+              <h2>Follow & Stay Connected</h2>
+              <div class="sharethis-inline-share-buttons"></div>
+              <div class="medialinks">
+
+                <a href="https://www.instagram.com/titozambrano/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/titozambranoart/" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                  <iframe
+                    src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Ftitozambranoart&layout=button&size=large&appId=2376271312612152&width=73&height=28"
+                    width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowTransparency="true" allow="encrypted-media"></iframe>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-
-        <!-- row -->
-        <div class="row">
-          <footer class="col-12">
-            <p class="text-center tm-copyright-text">
-              Copyright 2019 Tito Zambrano.
-              <br>
-              - Design: <a rel="nofollow" href="https://www.bryannishi.com" target="_blank">Bryan Nishi</a></p>
-          </footer>
-        </div>
+      <!-- row -->
+      <div class="row">
+        <footer class="col-12">
+          <p class="text-center tm-copyright-text">
+            Copyright 2019 Tito Zambrano.
+            <br>
+            - Design: <a rel="nofollow" href="https://www.bryannishi.com" target="_blank">Bryan Nishi</a></p>
+        </footer>
       </div>
-      <!-- container -->
     </div>
+    <!-- container -->
+  </div>
   </div>
   <!-- section -->
   <script src="js/jquery.min.js"></script>
   <script src="js/parallax.min.js"></script>
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
   <script
     src="https://platform-api.sharethis.com/js/sharethis.js#property=5cfa782c4351e9001264fac9&product=inline-follow-buttons">
   </script>
@@ -226,6 +264,18 @@
         setBrandMarginTop();
       });
     });
+  </script>
+  <script>
+    ! function (e, t, n, s, i, c) {
+      i = t.createElement(n), c = t.getElementsByTagName(n)[0], i.async = 1,
+        i.src = s, c.parentNode.insertBefore(i, c)
+    }(window, document, "script", "https://www.picktime.com/assets/booking.js");
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
 </body>
 
