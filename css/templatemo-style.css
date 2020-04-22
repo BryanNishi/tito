@@ -37,7 +37,8 @@ body {
   font-size: 18px;
   font-weight: 400;
   color: #6b6b6b;
-  overflow-x: hidden;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 a,
@@ -126,7 +127,6 @@ a:hover {
 
 .parallax-window {
   min-height: 1100px;
-  /* background-image: url("../img/tito2.jpg"); */
   background-position-x: 75%;
   background-position-y: 75%;
 }
@@ -204,6 +204,7 @@ a:hover {
   background-position-y: 35%;
   border-top: 2rem double white;
   border-bottom: 2rem double white;
+  max-width: 75vw;
 }
 
 .tm-text-green {
@@ -317,6 +318,18 @@ p {
   text-decoration: none;
 }
 
+.feed {
+  background-color: rgba(53, 53, 53, 0.5);
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+
+.footer {
+  background-color: rgb(87, 20, 78, 0.75);
+  padding: 1rem;
+}
+
+/*                  Media Queries      */
 @media (max-width: 1054px) {
   .tm-contact-item-icon {
     margin-bottom: 15px;
