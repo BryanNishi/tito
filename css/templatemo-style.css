@@ -131,7 +131,7 @@ a:hover {
   background-position-y: 75%;
 }
 
-#tmContact {
+#tmArt {
   min-height: 1197px;
 }
 
@@ -234,8 +234,15 @@ p {
 /*
   Contact section
 */
+.locationInfo {
+  margin: 1.5rem;
+}
 
-#tmContact {
+.storeLogo {
+  justify-content: center;
+}
+
+#tmArt {
   padding-top: 95px;
 }
 
@@ -329,7 +336,13 @@ p {
   padding: 1rem;
 }
 
-/*                  Media Queries      */
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
+
+/*****************************************Media Queries***********************************/
 @media (max-width: 1054px) {
   .tm-contact-item-icon {
     margin-bottom: 15px;

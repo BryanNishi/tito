@@ -38,17 +38,23 @@
               <a class="nav-link" href="#tmBio">Bio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#tmContact">Art</a>
+              <a class="nav-link" href="#tmArt">Art</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#feed">Instagram Feed</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
           </ul>
-          <a class="nav-link" href="/shop">Shop</a>
-          <a href="https://www.picktime.com/276b966b-395e-4f5e-bd92-f7e27cf4e8ff" class="ptbkbtn" target="_blank"
-            style="float:none;"><img src="https://www.picktime.com/bookingPage/img/picktime-book-online.png"
-              alt="Book an appointment with Tito Zambrano Art" /></a>
+
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li><a class="nav-link" href="/shop">Shop</a></li>
+            <li><a class="ptbkbtn nav-link" href="https://www.picktime.com/276b966b-395e-4f5e-bd92-f7e27cf4e8ff"
+                target="_blank">Book
+                Consulation</a></li>
         </div>
+        </ul>
       </div>
     </nav>
     <!-- Hero Image -->
@@ -119,7 +125,7 @@
 
 
     <!-- portfolio section -->
-    <div id="tmContact" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-02.jpg">
+    <div id="tmArt" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-02.jpg">
       <div class="container-fluid">
         <h1>My Art</h1>
         <div class="row">
@@ -182,7 +188,6 @@
             </div>
           </div>
         </div>
-
       </div>
 
       <!-- Feed -->
@@ -192,11 +197,33 @@
           <div class="elfsight-app-bd27463a-8b46-43cc-8905-67460562449d">
           </div>
         </div>
+      </section>
+
+      <!--  Contact  -->
+      <section id=contact>
+        <div class="container-fluid ">
+          <div class="locationInfo">
+            <h1>Hollywood's Twisted Needle Tattoo</h1>
+            <div class="row mx-auto">
+              <div class="col-lg-6 col-sm-1">
+                <a class="storeLogo"><img src=./img/twisted.jpg alt="Twisted Needle Tattoo Logo" /></a>
+              </div>
+              <div class="col-lg-6 col-sm-1">
+                <h2>618 S Patterson St, Valdosta, GA 31601</h2>
+                <h2>(229) 245-9498</h2>
+                <h2>Tue-Sat 11a-8p</h2>
+              </div>
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+
+
         <div class="footer">
           <div class="container-fluid contact">
             <div class="row text-center">
               <div class="col-6">
-                <h2>Book online!</h2>
+                <h2>Book Consultation</h2>
                 <a href="https://www.picktime.com/276b966b-395e-4f5e-bd92-f7e27cf4e8ff" class="ptbkbtn" target="_blank"
                   style="float:none;"><img src="https://www.picktime.com/bookingPage/img/picktime-book-online.png"
                     alt="Book an appointment with Tito Zambrano Art" /></a>
@@ -288,6 +315,31 @@
   </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <!--Google Map-->
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var uluru = {
+        lat: 30.823,
+        lng: -83.275
+      };
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+        document.getElementById('map'), {
+          zoom: 14,
+          center: uluru
+        });
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBs0PghFRTQCmQvwpsLCnFybeJGDx2i3CI&callback=initMap">
   </script>
 </body>
 
