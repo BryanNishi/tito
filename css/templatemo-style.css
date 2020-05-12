@@ -39,6 +39,7 @@ body {
   color: #6b6b6b;
   overflow: hidden;
   overflow-y: scroll;
+  background-color: rgb(40, 40, 40);
 }
 
 a,
@@ -93,6 +94,11 @@ a:hover {
 .navbar button {
   float: right;
 }
+
+h1 {
+  text-shadow: 2px 2px 4px #222;
+}
+
 /*
   Welcome section
 */
@@ -183,7 +189,7 @@ a:hover {
   text-align: center;
 }
 
-.iframe {
+.v_player {
   width: 560px;
   height: 315px;
 }
@@ -201,10 +207,12 @@ a:hover {
   background-image: url("../img/panamacity.jpg");
   background-size: cover;
   background-attachment: relative;
+  background-position-x: 50%;
   background-position-y: 35%;
   border-top: 2rem double white;
   border-bottom: 2rem double white;
   max-width: 75vw;
+  max-height: 50vw;
 }
 
 .tm-text-green {
@@ -227,8 +235,27 @@ a:hover {
   font-size: 1.3rem;
 }
 
+h2 {
+  color: #999;
+  text-shadow: 2px 2px 4px #222;
+}
+
 p {
   line-height: 1.8;
+  color: #999;
+}
+
+#sponsor {
+  background-image: url(../img/panama-flag.jpg);
+  background-size: cover;
+  background-position: 50%;
+  background-attachment: fixed;
+}
+
+#sponsor img {
+  max-width: 20vw;
+  margin: auto;
+  padding: 1rem;
 }
 
 /*
@@ -239,7 +266,7 @@ p {
 }
 
 .storeLogo {
-  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 #tmArt {
@@ -340,6 +367,7 @@ p {
   width: 100%;
   height: 400px;
   background-color: grey;
+  margin-top: 1rem;
 }
 
 /*****************************************Media Queries***********************************/
@@ -347,8 +375,14 @@ p {
   .tm-contact-item-icon {
     margin-bottom: 15px;
   }
+  #consultation {
+    padding: 1rem;
+    margin: 1rem;
+    width: 99vw;
+  }
 }
 
+/*  991 */
 @media (max-width: 991px) {
   .tm-welcome-right img {
     max-width: 300px;
@@ -356,6 +390,14 @@ p {
 
   .tm-welcome-left {
     padding: 0rem 1.5rem;
+  }
+
+  .tm-brand-container-inner {
+    max-width: 25rem;
+  }
+
+  .tm-brand-container {
+    padding: 2rem 0rem;
   }
 
   .tm-contact-items-container {
@@ -381,7 +423,7 @@ p {
     margin-right: auto;
   }
 
-  .iframe {
+  .v_player {
     width: 350px;
     height: 200px;
   }
@@ -392,18 +434,49 @@ p {
   }
 }
 
+/* 766 */
 @media (max-width: 766px) {
+  body {
+    background-color: #222;
+    overflow-x: hidden;
+  }
+
+  .tm-welcome-container {
+    bottom: -15rem;
+  }
+
   .tm-brand-container {
-    padding: 0px 85px 0px 0px;
-    margin-bottom: 12rem;
+    padding: 0rem 3rem 0rem 0rem;
+    margin-top: 10rem;
   }
 
   .contact {
     color: #222;
   }
+
+  .storeLogo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+  }
+
+  h1 {
+    color: whitesmoke;
+    text-shadow: #333;
+  }
+
+  h2 {
+    font-size: 5vh;
+  }
 }
 
+/* 572 */
 @media (max-width: 572px) {
+  .main-content {
+    margin-top: 15rem;
+  }
+
   .tm-brand-description {
     font-size: 1rem;
   }
@@ -411,8 +484,18 @@ p {
   .tm-brand-container {
     padding: 45px;
   }
+
+  .storeLogo img {
+    width: 80vw;
+  }
+
+  h2 {
+    font-size: 3vh;
+    color: #222;
+  }
 }
 
+/* 443 */
 @media (max-width: 443px) {
   .tm-brand-name {
     font-size: 3rem;
@@ -425,7 +508,7 @@ p {
     height: 20rem;
   }
 
-  .iframe {
+  .v_player {
     width: 300px;
     height: 170px;
   }
@@ -437,5 +520,9 @@ p {
   .medialinks i {
     font-size: 2rem;
     padding: 5px;
+  }
+
+  h2 {
+    font-size: 2vh;
   }
 }
