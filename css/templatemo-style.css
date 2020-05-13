@@ -469,20 +469,37 @@ p {
   h2 {
     font-size: 5vh;
   }
+
+  /* #sponsor img {
+    max-width: 60vw;
+    margin-left: 25%;
+  } */
 }
 
 /* 572 */
 @media (max-width: 572px) {
-  .main-content {
-    margin-top: 15rem;
-  }
-
   .tm-brand-description {
     font-size: 1rem;
   }
 
+  .tm-brand-container-inner {
+    max-width: 18rem;
+  }
+
   .tm-brand-container {
-    padding: 45px;
+    padding: 1rem;
+  }
+
+  .tm-brand-name {
+    font-size: 3.5rem;
+  }
+
+  .tm-brand-description {
+    color: whitesmoke;
+  }
+
+  #tmBio {
+    margin-top: 16rem;
   }
 
   .storeLogo img {
@@ -491,7 +508,6 @@ p {
 
   h2 {
     font-size: 3vh;
-    color: #222;
   }
 }
 
@@ -499,6 +515,15 @@ p {
 @media (max-width: 443px) {
   .tm-brand-name {
     font-size: 3rem;
+  }
+
+  .tm-brand-container {
+    padding: 0rem;
+    margin: 0;
+  }
+
+  .tm-brand-container-inner {
+    max-width: 16rem;
   }
 
   #tmPortfolio {
@@ -524,5 +549,10 @@ p {
 
   h2 {
     font-size: 2vh;
+  }
+
+  #sponsor img {
+    max-width: 95vw;
+    /* margin-left: 15%; */
   }
 }
